@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        tools:context=".TimeActivity">
+
+    <TextView
+            android:id="@+id/drinkGoalText"
+            android:text="目標飲水量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <Spinner
+                android:id="@+id/drinkGoalSpiner"
+                android:layout_alignParentRight="true"
+                android:entries="@array/GoalList"
+                android:spinnerMode="dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/timeText1"
+            android:text="起床時間"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <Spinner
+                android:id="@+id/time1Spiner"
+                android:layout_alignParentRight="true"
+                android:entries="@array/timeList"
+                android:spinnerMode="dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/timeText2"
+            android:text="消灯時間"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <Spinner
+                android:id="@+id/time2Spiner"
+                android:layout_alignParentRight="true"
+                android:entries="@array/timeList"
+                android:spinnerMode="dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/timeText3"
+            android:text="PUSH通知のタイミング"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <Spinner
+                android:id="@+id/time3Spinner"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:spinnerMode="dialog"
+                android:entries="@array/termList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <!--
+        <CheckBox
+                android:id="@+id/checkbox_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time3Spinner"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:text="起床時のプッシュ通知あり"/>
+
+        <CheckBox
+                android:id="@+id/checkbox_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox_1"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:text="消灯時のプッシュ通知あり"/>
+
+        -->
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/decideButton"
+                android:layout_centerInParent="true"
+                android:text="登録"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
